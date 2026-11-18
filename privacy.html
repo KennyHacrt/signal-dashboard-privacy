@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>私隱政策 · Signal Dashboard</title><style>body{font:1.05rem/1.75 system-ui,sans-serif;color:#20352b;max-width:44rem;margin:auto;padding:2rem 1.2rem}nav{display:flex;gap:1.2rem;flex-wrap:wrap}a{color:#18583b}h2{font-size:1.25rem;margin-top:2rem}footer{margin-top:3rem}</style></head><body>
+<nav aria-label="網站導覽"><a href="index.html">Signal Dashboard</a><a href="privacy.html">私隱政策</a><a href="terms.html">服務條款</a></nav>
+<main><h1>私隱政策</h1>
+<p>本政策說明 Signal Dashboard 桌面程式如何處理已連接的發布商報表。</p>
+<h2>Google 帳戶資料</h2><p>連接 AdMob 時，程式只申請 <code>admob.report</code> 權限，用以識別發布商帳戶及報表時區，讀取 App 識別碼、名稱、日期和預估廣告收益。程式使用這些資料來顯示報表、進行每日同步及核對後台金額。</p>
+<h2>保存及傳送</h2><p>Google 發出授權後，桌面程式透過 Windows 加密保存更新權杖及裝置憑證。同步時，程式向 Google 取得報表，並把報表及對帳結果傳送至已配置的 Supabase 專案。桌面程式從該專案讀取報表，在記憶體中顯示。公開說明頁不會顯示帳戶報表。</p>
+<h2>停止存取及刪除</h2><p>你可以在<a href="https://myaccount.google.com/connections">Google 帳戶的第三方連線設定</a>移除 Signal Dashboard，停止日後讀取 AdMob 報表。撤銷授權後，已同步的資料仍保存在 Supabase。帳戶持有人可以聯絡下方電郵，要求刪除已保存的報表及對帳資料。</p>
+<p>Signal Dashboard 使用 Google API 所取得的資料，以提供上述報表及對帳功能，並遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括 Limited Use 要求。</p>
+</main><footer>支援電郵 <a href="mailto:leekenny746@gmail.com">leekenny746@gmail.com</a></footer></body></html>
